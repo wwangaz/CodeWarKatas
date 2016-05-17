@@ -6,6 +6,15 @@ import java.math.BigInteger;
  * Created by wangweimin on 16/5/13.
  */
 public class Fibonacci {
+    public static BigInteger two = new BigInteger("2");
+    public static BigInteger three = new BigInteger("3");
+    public static BigInteger four = new BigInteger("4");
+    public static BigInteger five = new BigInteger("5");
+    public static BigInteger six = new BigInteger("6");
+    public static BigInteger seven = new BigInteger("7");
+    public static BigInteger eight = new BigInteger("8");
+    public static BigInteger thirteen = new BigInteger("13");
+
     public static BigInteger fib(BigInteger n) {
         // ...
         if (n.compareTo(BigInteger.ZERO) < 0) {
@@ -14,26 +23,45 @@ public class Fibonacci {
             return fib(positiveN).multiply(new BigInteger("-1")).multiply(isNegative ? BigInteger.ONE : new BigInteger("-1"));
         }
 
-        int thresholdInt = (int) Math.sqrt(n.doubleValue());
-        BigInteger threshold = new BigInteger(thresholdInt + "");
-
-        return fib(n, threshold);
-    }
-
-    public static BigInteger fib(BigInteger n, BigInteger threshold) {
-
         if (n.equals(BigInteger.ZERO))
             return BigInteger.ZERO;
+
         if (n.equals(BigInteger.ONE))
             return BigInteger.ONE;
-        
-        if (n.compareTo(threshold.add(BigInteger.ONE)) <= 0)
-            return fib(n.subtract(BigInteger.ONE), threshold).add(fib(n.subtract(new BigInteger("2")), threshold));
-        else {
-            BigInteger part1 = fib(threshold.add(BigInteger.ONE), threshold).multiply(fib(n.subtract(threshold), threshold));
-            BigInteger part2 = fib(threshold, threshold).multiply(fib(n.subtract(threshold).subtract(BigInteger.ONE), threshold));
-            return part1.add(part2);
-        }
+
+        if (n.equals(two))
+            return BigInteger.ONE;
+
+        if(n.equals(three))
+            return two;
+
+        if(n.equals(four))
+            return three;
+
+        if(n.equals(five))
+            return five;
+
+        if(n.equals(six))
+            return eight;
+
+        if(n.equals(seven))
+            return thirteen;
+
+        return _fib(n)[0];
+
     }
 
+    public static BigInteger[] _fib(BigInteger n){
+        if(n.equals(BigInteger.ZERO))
+            return new BigInteger[]{BigInteger.ZERO, BigInteger.ONE};
+        else{
+            BigInteger[] ab = _fib(n.divide(two));
+            BigInteger c = ab[0].multiply(ab[1].multiply(two).subtract(ab[0]));
+            BigInteger d = ab[0].multiply(ab[0]).add(ab[1].multiply(ab[1]));
+            if(n.divide(two).equals(BigInteger.ZERO))
+                return new BigInteger[]{c, d};
+            else return new BigInteger[]{d, c.add(d)};
+        }
+
+    }
 }

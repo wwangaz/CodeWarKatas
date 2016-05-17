@@ -42,7 +42,7 @@ public class FibonacciTest {
 
     @Test
     public void testFib6(){
-        testFib(0, 1000);
+        testFib(0, 1500000);
     }
 
     private static void testFib(long expected, long input) {
