@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a33fb8e9-e075-41ea-8002-555598230e03" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyTest/CodeWars/Fibonacci.class" afterPath="$PROJECT_DIR$/out/production/MyTest/CodeWars/Fibonacci.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MyTest/CodeWars/FibonacciTest.class" afterPath="$PROJECT_DIR$/out/production/MyTest/CodeWars/FibonacciTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CodeWars/Fibonacci.java" afterPath="$PROJECT_DIR$/src/CodeWars/Fibonacci.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CodeWars/FibonacciTest.java" afterPath="$PROJECT_DIR$/src/CodeWars/FibonacciTest.java" />
     </list>
     <ignored path="MyTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +32,8 @@
       <file leaf-file-name="Fibonacci.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CodeWars/Fibonacci.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36619717">
-              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="50" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5492958">
+              <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -728,7 +724,7 @@
       <workItem from="1463122735581" duration="657000" />
       <workItem from="1463382367440" duration="6243000" />
       <workItem from="1463389072213" duration="3067000" />
-      <workItem from="1463448353004" duration="7355000" />
+      <workItem from="1463448353004" duration="7400000" />
     </task>
     <servers />
   </component>
@@ -765,7 +761,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135625000" />
+    <option name="totallyTimeSpent" value="135670000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1242,8 +1238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CodeWars/Fibonacci.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36619717">
-          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="50" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5492958">
+          <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
           <folding />
         </state>
       </provider>

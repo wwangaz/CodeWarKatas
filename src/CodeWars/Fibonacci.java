@@ -49,6 +49,14 @@ public class Fibonacci {
 
         return _fib(n)[0];
 
+//        BigInteger[] results = n.divideAndRemainder(two);
+//
+//        if (results[1].equals(BigInteger.ZERO)){
+//            BigInteger part1 = fib(results[0].add(BigInteger.ONE));
+//            BigInteger part2 = fib(results[0].subtract(BigInteger.ONE));
+//            return fib(results[0]).multiply((part1.add(part2)));
+//        }
+//        else return fib(results[0].add(BigInteger.ONE)).pow(2).add(fib(results[0]).pow(2));
     }
 
     public static BigInteger[] _fib(BigInteger n){
